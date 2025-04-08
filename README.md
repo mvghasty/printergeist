@@ -74,7 +74,7 @@ python main.py
 ```
 
 
-or you can turn it into a binary inside your bin folder:
+or you can turn it into a binary inside your bin folder with the ``smoly`` file on the ``src/`` folder:
 
 
 ```shell
