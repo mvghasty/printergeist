@@ -26,3 +26,40 @@
                         _\o/_  - Tudo bem com vocês?!
                          //
                         ( )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*
+   *
+   * smoly - A Python CLI application by mvghasty
+   * Based on the pycups library
+   * https://github.com/mvghasty/smoly
+   *
+   * Copyright (c) 2025 mvghasty
+   *
+   * Licensed under the MIT License. You may obtain a copy of the license at:
+   * https://opensource.org/licenses/MIT
+   *
+   */
