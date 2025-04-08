@@ -74,7 +74,7 @@ python main.py
 ```
 
 
-or or you can turn it into a binary inside your bin folder:
+or you can turn it into a binary inside your bin folder:
 
 
 ```shell
