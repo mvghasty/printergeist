@@ -70,7 +70,7 @@ Also make sure you have your printer drivers installed on your computer. If not,
 | **Dell** | ⚠️ Basic support for some legacy printers | [dell.com](https://www.dell.com/support/home/en-us?app=drivers) |
 
 
-So, after checking all these details and installing the necessary dependencies, clone this repository:
+After reviewing the project requirements and ensuring all dependencies are properly installed, you can proceed by cloning this repository:
 
 
 ```shell
@@ -78,7 +78,7 @@ git clone https://github.com/mvghasty/printergeist.git
 ```
 
 
-After you have cloned the repository, you can now access smoly and run it inside the application folder:
+Once the repository is cloned, navigate to the application directory and run the main script:
 
 
 ```shell
@@ -87,16 +87,24 @@ python main.py
 ```
 
 
-or you can turn it into a binary inside your bin folder with the ``pgeist`` file in the ``src/`` folder. To do this, first open the pgeist file in your favorite code editor:
+Alternatively, you can create a binary-like executable using the ``pgeist`` bash script located in the ``src/`` directory. This allows you to run the program from anywhere as a CLI tool.
 
-```shell
-emacs pgeist
-```
+### Creating the CLI Executable
 
-Once the file is open, modify the line with the following content: 
+  **1.** Open the ``pgeist`` file in your preferred text editor:
 
-```shell
-MAIN_PATH="path/to/main.py"
-```
+  ```shell
+  emacs pgeist  # or use nano, vim, code, etc.
+  ```
 
-Replace `"path/to/main.py"` with the path to the printergeist **main.py** file and the bash file itself does the installation and moves the binary to the /usr/local/bin folder. The code itself is well documented, if you have any doubt, read the comments in the code itself.
+  **2.** Locate the following line:
+
+  ```shell
+  MAIN_PATH="path/to/main.py"
+  ```
+
+  **3.** Replace ``"path/to/main.py"`` with the absolute or relative path to the main.py file inside the ``printergeist/src`` directory.
+
+  **4.** Save the file and execute it. The script will automatically handle the installation and move the executable to the ``/usr/local/bin`` directory, making it accessible system-wide as ``pgeist``.
+
+The source code is thoroughly documented. If you have any questions about implementation details or internal logic, please refer to the inline comments within the codebase.
