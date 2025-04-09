@@ -1,4 +1,5 @@
 import cups
+import json
 import os
 import mimetypes
 import time
@@ -18,6 +19,12 @@ amarelo  = "\033[48;5;226m"
 verde    = "\033[48;5;46m" 
 
 console = Console()
+
+console.print("="*largura)
+print(("ᕕ( ᐛ )ᕗ  ~  P R I N T E R G E I S T  ~  ᕕ( ᐛ )ᕗ").center(largura))
+print(("Copyright (c) 2025 mvghasty - https://github.com/mvghasty/printergeist").center(largura))
+print(("LICENSE: GNU General Public License, 2.0").center(largura))
+print("="*largura)
 
 def format_bytes(size):
     for unit in ['B', 'KB', 'MB', 'GB']:
@@ -40,7 +47,7 @@ if not printer_name:
     print(f"{vermelho}{textc} [	ಠ_ಠ ] - ERROR: Impressora Epson L3250 não encontrada.{reset}")
     exit(1)
 
-file_path = input("[  π  ] - Digite o caminho do arquivo que deseja imprimir: ").strip()
+file_path = input("[  π  ] - Digite o nome ou caminho do arquivo que deseja imprimir: ").strip()
 
 if not os.path.isfile(file_path):
     error_table_input = Table(title="\n[ ಠ_ಠ ] ! ERROR ! [ ಠ_ಠ ]", box=None, title_style="bold black on red")
@@ -71,6 +78,9 @@ table.add_row(
     "Sim" if is_color else "Não"
 )
 
+console.print("="*largura)
+print(("CUPS REQUEST").center(largura))
+print("="*largura)
 console.print(table)
 
 with Progress(
@@ -88,7 +98,7 @@ with Progress(
         )
         time.sleep(2)
     except cups.IPPError as e:
-        error_table_pres = Table(title="\n[ ಠ_ಠ ] ! ERROR ! [ ಠ_ಠ ]", box=None, title_style="bold black on red")
+        error_table_press = Table(title="\n[ ಠ_ಠ ] ! ERROR ! [ ಠ_ಠ ]", box=None, title_style="bold black on red")
         error_table_press.add_column("REQUEST_ERROR", justify="center", header_style="bold black on red", style="bold black on red")
         error_table_press.add_row(
             f"Erro ao enviar impressão: {e}\n"
@@ -96,4 +106,9 @@ with Progress(
         console.print(error_table_press)
         exit(1)
 console.print(f"\n[bold bright_white on green][ (^‿^) ] - Impressão enviada com sucesso! Job ID: {job_id} [/bold bright_white on green]\n")
-
+console.print("="*largura)
+print(("CUPS DEBUG-LOG").center(largura))
+print(("(JSON FILE FORMAT)").center(largura))
+print("="*largura)
+console.print(json.dumps(printers, indent=4, separators=(", ", " = ")), style="dim")
+print("="*largura)
