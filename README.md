@@ -87,8 +87,19 @@ python main.py
 ```
 
 
-or you can turn it into a binary inside your bin folder with the ``pgeist`` file on the ``src/`` folder:
+or you can turn it into a binary inside your bin folder with the ``pgeist`` file in the ``src/`` folder. To do this, first open the pgeist file in your favorite code editor:
 
+```shell
+emacs pgeist
+```
+
+Once the file is open, modify the line with the following content: 
+
+```shell
+python3 <path/to/main.py> "$@"
+```
+
+Replace `<path/to/main.py>` with the path to the printergeist **main.py** file. The code itself is well documented, if you have any doubt, read the comments in the code itself. Then, move the file to the ``/usr/local/bin`` folder with the prefix of your choice, **RECOMMENDED** to use ``pgt``, as in the example below:
 
 ```shell
 chmod +x pgeist
