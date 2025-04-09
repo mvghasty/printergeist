@@ -34,7 +34,7 @@ fi
 # This path should point directly to where the actual entry-point Python script is located.
 # Example: MAIN_PATH="/home/user/projects/printergeist/src/main.py"
 # This allows the shell script to locate and execute main.py no matter where the user runs this script from.
-MAIN_PATH="path/to/main"
+MAIN_PATH="path/to/main.py"
 
 # Execute the Python script using the system’s Python 3 interpreter.
 # "$@" forwards all command-line arguments received by this shell script to the Python script.
