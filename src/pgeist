@@ -16,35 +16,6 @@
 # This block will only run if the script is not already in /usr/local/bin
 # It makes the file executable and moves it to a location in the user's PATH
 # ---------------------------------------------------------------------------
-<<<<<<< HEAD
-
-# Set desired global command name
-TARGET_NAME="pgt"
-
-if [[ "$(realpath "$0")" != "/usr/local/bin/$TARGET_NAME" ]]; then
-    echo "Making the script executable..."
-    chmod +x "$0"
-
-    echo "Installing to /usr/local/bin (you may be prompted for sudo access)..."
-    sudo cp "$0" /usr/local/bin/"$TARGET_NAME"
-
-    echo "Installed! Now you can run it anywhere as: $TARGET_NAME"
-fi
-
-# Define the absolute path to the main.py file of the Printergeist application.
-# This path should point directly to where the actual entry-point Python script is located.
-# Example: MAIN_PATH="/home/user/projects/printergeist/src/main.py"
-# This allows the shell script to locate and execute main.py no matter where the user runs this script from.
-MAIN_PATH="path/to/main.py"
-
-# Execute the Python script using the system’s Python 3 interpreter.
-# "$@" forwards all command-line arguments received by this shell script to the Python script.
-# This means that arguments like filenames, flags, or options can be passed directly through.
-python3 "$MAIN_PATH" "$@"
-
-
-
-=======
 
 # Set desired global command name
 TARGET_NAME="pgt"
