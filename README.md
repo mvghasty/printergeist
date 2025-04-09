@@ -1,9 +1,9 @@
-# ¬‿¬ smoly ★
+# P R I N T E R G E I S T ★ 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
 
 A command-line utility built in Python (`pycups`) to send files directly to your USB printer on Linux — tested on **Fedora 41** with the **Epson L3250** (my personal printer and OS, btw), but with cross-platform dreams.
 
-The project was born out of personal frustration: even after installing the correct drivers, communicating with my printer and actually sending print jobs was more painful than it should be. Printing documents became a bottleneck in my workflow. So I decided to build something fast, simple, and intuitive (and customizable!) to solve it once and for all — and thus, **smoly** was born.
+The project was born out of personal frustration: even after installing the correct drivers, communicating with my printer and actually sending print jobs was more painful than it should be. Printing documents became a bottleneck in my workflow. So I decided to build something fast, simple, and intuitive (and customizable!) to solve it once and for all — and thus, **printergeist** was born.
 
 Besides just working (hopefully), it also:
 - 💅 Uses `rich` to make your terminal a beautiful place.
@@ -12,22 +12,22 @@ Besides just working (hopefully), it also:
 - 💡 Fully hackable and extensible — feel free to play with the visuals or extend the logic.
 
 
-### Smoly Software Officially Supported Models (SSOSM - Official List)
+### Printergeist Software Officially Supported Models (PSOSM - Official List)
 <br>
 
 ![Epson](https://img.shields.io/badge/Epson-ECOTANK/WORKFORCE/EXPRESSION-003d99?style=for-the-badge&logo=epson&logoColor=white) ![Canon](https://img.shields.io/badge/Canon-Pixma/imageCLASS/SELPHY-ffffff?style=for-the-badge&logo=canon&logoColor=red) ![DELL](https://img.shields.io/badge/dell-COLOR/C—Series/B—Series-007DB8?style=for-the-badge&logo=dell&logoColor=white) ![Samsung](https://img.shields.io/badge/samsung-Xpress/ProXpress/CLP—Series-1428A0?style=for-the-badge&logo=Samsung&logoColor=white) ![Xerox](https://img.shields.io/badge/Xerox-VersaLink/Phaser/WorkCentre-d51631?style=for-the-badge&logo=xerox&logoColor=white) ![Brother](https://img.shields.io/badge/Brother-MFC—Series/DCP—Series-1535a3?style=for-the-badge&logo=Brother&logoColor=white) ![Kyocera](https://img.shields.io/badge/Kyocera-ECOSYS/TASKalfa-e42136?style=for-the-badge&logo=kyocera&logoColor=white) ![Ricoh](https://img.shields.io/badge/Ricoh-P—Series/SP—Series-727375?style=for-the-badge&logo=lexmark&logoColor=white) ![HP](https://img.shields.io/badge/hp-OfficeJet-0096D6?style=for-the-badge&logo=hp&logoColor=white) ![Lexmark](https://img.shields.io/badge/Lexmark-M—Series-08c62c?style=for-the-badge&logo=lexmark&logoColor=white) 
 
 <br>
 
-The list above highlights a selection of representative printer models from each major brand that offer official Linux driver support. As of the latest update (2025-04-08), these models are known to be compatible with smoly or are expected to function correctly when configured via CUPS.
+The list above highlights a selection of representative printer models from each major brand that offer official Linux driver support. As of the latest update (2025-04-08), these models are known to be compatible with printergeist or are expected to function correctly when configured via CUPS.
 
-This list is curated for reference and user convenience only. As a Free and Open Source Software (FOSS) project licensed under the MIT License, smoly operates independently and is not affiliated with, endorsed by, or sponsored by any of the manufacturers mentioned.
+This list is curated for reference and user convenience only. As a Free and Open Source Software (FOSS) project licensed under the GPLv2 License, printergeist operates independently and is not affiliated with, endorsed by, or sponsored by any of the manufacturers mentioned.
 
 Compatibility may vary depending on the Linux distribution, driver version, and CUPS configuration. Users are encouraged to consult the official documentation of each vendor to ensure full support for advanced printing features (e.g., duplex, color modes, resolution control).
 
 ## REQUIREMENTS
 
-To run **smoly** smoothly on your system, you'll need the following:
+To run **printergeist** smoothly on your system, you'll need the following:
 
 - Python 3.9 or newer  
 - Python dependencies:
@@ -74,7 +74,7 @@ So, after checking all these details and installing the necessary dependencies, 
 
 
 ```shell
-git clone https://github.com/mvghasty/smoly.git
+git clone https://github.com/mvghasty/printergeist.git
 ```
 
 
@@ -82,16 +82,16 @@ After you have cloned the repository, you can now access smoly and run it inside
 
 
 ```shell
-cd smoly/src
+cd printergeist/src
 python main.py
 ```
 
 
-or you can turn it into a binary inside your bin folder with the ``smoly`` file on the ``src/`` folder:
+or you can turn it into a binary inside your bin folder with the ``pgeist`` file on the ``src/`` folder:
 
 
 ```shell
-chmod +x smoly
-sudo mv smoly /usr/local/bin/
-smoly
+chmod +x pgeist
+sudo mv pgeist /usr/local/bin/pgt
+pgt
 ```
