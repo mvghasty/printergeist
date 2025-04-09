@@ -96,13 +96,7 @@ emacs pgeist
 Once the file is open, modify the line with the following content: 
 
 ```shell
-python3 <path/to/main.py> "$@"
+MAIN_PATH="path/to/main.py"
 ```
 
-Replace `<path/to/main.py>` with the path to the printergeist **main.py** file. The code itself is well documented, if you have any doubt, read the comments in the code itself. Then, move the file to the ``/usr/local/bin`` folder with the prefix of your choice, **RECOMMENDED** to use ``pgt``, as in the example below:
-
-```shell
-chmod +x pgeist
-sudo mv pgeist /usr/local/bin/pgt
-pgt
-```
+Replace `"path/to/main.py"` with the path to the printergeist **main.py** file and the bash file itself does the installation and moves the binary to the /usr/local/bin folder. The code itself is well documented, if you have any doubt, read the comments in the code itself.
