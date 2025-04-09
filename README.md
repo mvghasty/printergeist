@@ -1,4 +1,7 @@
 # ¬‿¬ smoly ★
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+
 
 A command-line utility built in Python (`pycups`) to send files directly to your USB printer on Linux — tested on **Fedora 41** with the **Epson L3250** (my personal printer and OS, btw), but with cross-platform dreams.
 
