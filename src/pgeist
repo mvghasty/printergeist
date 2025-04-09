@@ -1,4 +1,15 @@
 #!/bin/bash
+# -----------------------------------------------------------------------------
+# Project: Printergeist
+# Repo: https://github.com/mvghasty/printergeist
+# License: GPL-2.0
+# Copyright (c) 2025 mvghasty
+#
+# This program is free software: you can redistribute and/or modify it
+# under the terms of the GNU General Public License v2.
+#
+# This program comes with no warranty. See the LICENSE file for details.
+# ---------------------------------------------------------------------------
 
 # Change "<path/to/main.py>" to the path to the printgeist main.py file. If you have any doubts, look in the cloned printergeist repository folder for the src folder, there will be the main.py file, and then just copy the path to the file.
 python3 <path/to/main.py> "$@"
