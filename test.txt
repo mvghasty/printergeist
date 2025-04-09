@@ -40,9 +40,9 @@
 
 /*
  *
- * smoly - A Python CLI application by mvghasty  
+ * printergeist - A Python CLI application by mvghasty  
  * Based on the pycups library  
- * https://github.com/mvghasty/smoly
+ * https://github.com/mvghasty/printergeist
  *
  * Copyright (c) 2025 mvghasty
  *
