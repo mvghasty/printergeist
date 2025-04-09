@@ -83,7 +83,7 @@ with Progress(
         job_id = conn.printFile(
             printer_name,
             file_path,
-            "REQUEST VIA BYNK",
+            "REQUEST VIA PRINTERGEIST",
             {"document-format": mime_type or "application/octet-stream"}
         )
         time.sleep(2)
