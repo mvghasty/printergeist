@@ -1,3 +1,4 @@
 #!/bin/bash
 
-python3 main.py "$@"
+# Change "<path/to/main.py>" to the path to the printgeist main.py file. If you have any doubts, look in the cloned printergeist repository folder for the src folder, there will be the main.py file, and then just copy the path to the file.
+python3 <path/to/main.py> "$@"
