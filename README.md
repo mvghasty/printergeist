@@ -100,7 +100,7 @@ Alternatively, you can create a binary-like executable using the ``pgeist`` bash
   **2.** Locate the following line:
 
   ```shell
-  MAIN_PATH="path/to/main.py"
+  PATH_PGT="path/to/main.py"
   ```
 
   **3.** Replace ``"path/to/main.py"`` with the absolute or relative path to the main.py file inside the ``printergeist/src`` directory.
