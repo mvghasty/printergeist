@@ -34,10 +34,17 @@ fi
 # This path should point directly to where the actual entry-point Python script is located.
 # Example: PATH_PGT="/home/user/projects/printergeist/src/main.py"
 # This allows the shell script to locate and execute main.py no matter where the user runs this script from.
+<<<<<<< HEAD
 PATH_PGT="path/to/main.py"
+=======
+PATH_PGT="/home/mavic/Área de trabalho/printergeist/src/main.py"
+>>>>>>> 919cb2e (Fix the main.py + increasing design layers and final adjustments to the pgeist bash file)
 
 # Execute the Python script using the system’s Python 3 interpreter.
 # "$@" forwards all command-line arguments received by this shell script to the Python script.
 # This means that arguments like filenames, flags, or options can be passed directly through.
 python3 "$PATH_PGT" "$@"
+<<<<<<< HEAD
+>>>>>>> 919cb2e (Fix the main.py + increasing design layers and final adjustments to the pgeist bash file)
+=======
 >>>>>>> 919cb2e (Fix the main.py + increasing design layers and final adjustments to the pgeist bash file)
