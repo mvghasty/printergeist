@@ -36,7 +36,6 @@ def format_bytes(size):
 conn = cups.Connection()
 printers = conn.getPrinters()
 
-# Buscar impressora Epson L3250
 printer_name = None
 for name in printers:
     if "L3250" in name.upper() or "EPSON" in name.upper():
